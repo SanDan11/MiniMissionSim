@@ -1,0 +1,59 @@
+{
+  "folders": [
+    {
+      "name": "Backend (C++)",
+      "path": "backend_cpp"
+    },
+    {
+      "name": "Frontend (React)",
+      "path": "frontend_react"
+    },
+    {
+      "name": "Python Tools",
+      "path": "python_tools"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/__pycache__": true,
+      "**/build": true
+    },
+    "editor.formatOnSave": true,
+    "terminal.integrated.splitCwd": "workspaceRoot"
+  },
+  "launch": {
+    "configurations": [
+      {
+        "name": "Run Backend (C++)",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder:backend_cpp}/build/sim.exe",
+        "cwd": "${workspaceFolder:backend_cpp}/build",
+        "MIMode": "gdb",
+        "preLaunchTask": "build backend"
+      },
+      {
+        "name": "Run Frontend (React)",
+        "type": "node-terminal",
+        "request": "launch",
+        "command": "npm run dev",
+        "cwd": "${workspaceFolder:frontend_react}"
+      }
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build backend",
+        "type": "shell",
+        "command": "cmake --build build",
+        "options": {
+          "cwd": "${workspaceFolder:backend_cpp}"
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
+}
