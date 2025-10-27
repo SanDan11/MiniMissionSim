@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/MiniMissionSim/backend_cpp/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

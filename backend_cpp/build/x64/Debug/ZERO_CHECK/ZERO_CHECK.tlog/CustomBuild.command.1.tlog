@@ -1,0 +1,10 @@
+^C:\MINIMISSIONSIM\BACKEND_CPP\BUILD\CMAKEFILES\009C30FBB87FB335FDCFDECDB0753493\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/MiniMissionSim/backend_cpp -BC:/MiniMissionSim/backend_cpp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/MiniMissionSim/backend_cpp/build/MiniMissionSim_Backend.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
