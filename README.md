@@ -100,7 +100,7 @@ This project demonstrates scalable systems thinking, real-time rendering, and au
 ## 👤 Author
 **Daniel Sanchez**  
 🎯 *Aspiring Software Engineer | Simulation Systems Developer*  
-📧 [Your Email or Portfolio Link]  
+📧 Danielrsanchez1990@icloud.com
 💻 GitHub: https://github.com/SanDan11
 
 ---
